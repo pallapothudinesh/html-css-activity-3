@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NexusAI - Frontier Autonomous Artificial Intelligence platform delivering multimodal foundation models, agentic workflows, and enterprise intelligence." />
+  <title>NexusAI Labs | Frontier Autonomous Artificial Intelligence</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Innovation Banner -->
+  <div class="announcement-banner">
+    <div class="container announcement-inner">
+      <span>✨ Announcing <strong>Nexus-Omni 4.5</strong>: 2M Context, Sub-15ms Latency & Multi-Agent Swarms. <a href="#products">Read Release Notes &rarr;</a></span>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-brain"></i></span>
+        <span class="logo-title">Nexus<span>AI</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars" id="toggleIcon"></i>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-item active">Home</a></li>
+          <li><a href="#products" class="nav-item">Products</a></li>
+          <li><a href="#features" class="nav-item">Features</a></li>
+          <li><a href="#applications" class="nav-item">Applications</a></li>
+          <li><a href="#technology" class="nav-item">Technology</a></li>
+          <li><a href="#team" class="nav-item">Team</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#contact" class="btn btn-primary btn-sm">Request API Access</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-aurora"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="pulse-dot"></span> Frontier Autonomous Intelligence
+        </div>
+        <h1 class="hero-heading">
+          Empowering Humanity with <span>Self-Evolving AI</span>
+        </h1>
+        <p class="hero-subtext">
+          NexusAI develops state-of-the-art multimodal foundation models and autonomous multi-agent swarms engineered to solve complex global challenges across medicine, engineering, and scientific discovery.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#playground" class="btn btn-primary">
+            <i class="fa-solid fa-terminal"></i> Try Live Playground
+          </a>
+          <a href="#products" class="btn btn-glass">
+            <i class="fa-solid fa-cubes"></i> Explore AI Models
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <h3>2.4 Trillion</h3>
+            <p>Parameters Trained</p>
+          </div>
+          <div class="metric-card">
+            <h3>&lt; 15 ms</h3>
+            <p>Real-Time Inference</p>
+          </div>
+          <div class="metric-card">
+            <h3>99.98%</h3>
+            <p>Enterprise Uptime SLA</p>
+          </div>
+          <div class="metric-card">
+            <h3>SOC-2</h3>
+            <p>Type II Certified</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="neural-orb-wrap">
+          <div class="neural-orb"></div>
+          <div class="floating-chip chip-top">
+            <i class="fa-solid fa-microchip"></i>
+            <div>
+              <strong>Mixture of Experts</strong>
+              <span>64 Swarm Routing Clusters</span>
+            </div>
+          </div>
+          <div class="floating-chip chip-bottom">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <strong>Zero Data Retention</strong>
+              <span>End-to-End Encrypted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive AI Playground Demo -->
+  <section class="section playground-section" id="playground">
+    <div class="container">
+      <div class="playground-card">
+        <div class="playground-header">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="terminal-title">
+            <i class="fa-solid fa-sparkles"></i> Nexus-Omni 4.5 Interactive Sandbox
+          </div>
+          <div class="terminal-status">
+            <span class="status-indicator"></span> Model Ready
+          </div>
+        </div>
+
+        <div class="playground-body">
+          <div class="prompt-presets">
+            <span class="preset-label">Test Prompts:</span>
+            <button class="preset-btn active" data-prompt="Analyze biochemical binding affinity for kinase inhibitor targets.">Biomedical Discovery</button>
+            <button class="preset-btn" data-prompt="Synthesize a distributed microservices architecture in Go with Raft consensus.">System Architecture</button>
+            <button class="preset-btn" data-prompt="Formulate multi-agent arbitrage hedge for high-frequency volatility.">Financial Modeling</button>
+          </div>
+
+          <div class="playground-interaction">
+            <div class="prompt-input-row">
+              <input type="text" id="demoInput" value="Analyze biochemical binding affinity for kinase inhibitor targets." />
+              <button id="runDemoBtn" class="btn btn-primary"><i class="fa-solid fa-play"></i> Run Inference</button>
+            </div>
+
+            <div class="response-box" id="demoOutput">
+              <div class="output-header">
+                <span class="model-badge">Nexus-Omni-4.5-Turbofast</span>
+                <span class="inference-time" id="latencyDisplay"><i class="fa-solid fa-bolt"></i> 14.2 ms</span>
+              </div>
+              <div class="output-text" id="outputText">
+                Computing molecular dynamics simulations... Target: Tyrosine Kinase receptor pocket (PDB: 6VXX). Ligand binding affinity estimated at -11.4 kcal/mol with favorable hydrogen bonding at residues Met793 and Thr854. Zero off-target toxicity predicted across secondary cardiac receptors. Ready for in-vitro validation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section products" id="products">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">Core AI Ecosystem</span>
+        <h2 class="section-title">Next-Gen Foundation Products</h2>
+        <p class="section-subtitle">Scalable, enterprise-ready AI services engineered for deployment on premise, edge, or cloud.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-badge">Flagship LLM</div>
+          <div class="product-icon">
+            <i class="fa-solid fa-atom"></i>
+          </div>
+          <h3>Nexus-Omni 4.5</h3>
+          <p>Massive multimodal reasoning model processing text, ultra-high-resolution vision, raw audio, and code across a unified 2-million-token context.</p>
+          <ul class="product-specs">
+            <li><i class="fa-solid fa-check"></i> 2M Active Token Context Window</li>
+            <li><i class="fa-solid fa-check"></i> Math & Coding SOTA Benchmark Leader</li>
+            <li><i class="fa-solid fa-check"></i> Streaming Structured JSON Outputs</li>
+          </ul>
+          <a href="#contact" class="product-link">Explore Model Docs <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-badge">Agentic Systems</div>
+          <div class="product-icon">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <h3>Nexus Swarm OS</h3>
+          <p>Autonomous multi-agent orchestration framework where specialized agents plan, delegate, execute tool calls, and verify results collaboratively.</p>
+          <ul class="product-specs">
+            <li><i class="fa-solid fa-check"></i> Self-Correcting Execution Loops</li>
+            <li><i class="fa-solid fa-check"></i> Sandboxed Dynamic Code Runtime</li>
+            <li><i class="fa-solid fa-check"></i> 500+ Built-in Enterprise Integrations</li>
+          </ul>
+          <a href="#contact" class="product-link">Explore Agentic OS <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-badge">Computer Vision</div>
+          <div class="product-icon">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3>Nexus-Vision 3D</h3>
+          <p>Real-time spatial perception and zero-shot 3D point-cloud scene reconstruction for robotics, autonomous vehicles, and medical tomography.</p>
+          <ul class="product-specs">
+            <li><i class="fa-solid fa-check"></i> 60 FPS 4K Real-Time Object Tracking</li>
+            <li><i class="fa-solid fa-check"></i> Dense Depth & Semantic Segmentation</li>
+            <li><i class="fa-solid fa-check"></i> Edge Hardware Compatible (Jetson / ARM)</li>
+          </ul>
+          <a href="#contact" class="product-link">Explore Vision Suite <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-badge">Developer Tools</div>
+          <div class="product-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Nexus-Code Copilot</h3>
+          <p>Autonomous software engineering engine that scans whole-repository dependencies, fixes vulnerabilities, and authors unit tests with verified passing rates.</p>
+          <ul class="product-specs">
+            <li><i class="fa-solid fa-check"></i> Full Repository Context Indexing</li>
+            <li><i class="fa-solid fa-check"></i> Zero Hallucination Type Checking</li>
+            <li><i class="fa-solid fa-check"></i> CI/CD Pipeline Self-Healing</li>
+          </ul>
+          <a href="#contact" class="product-link">Explore Code Engine <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">Why NexusAI</span>
+        <h2 class="section-title">Built for Enterprise Supremacy</h2>
+        <p class="section-subtitle">Architected from the ground up for strict security, high throughput, and reliable precision.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <h4>Air-Gapped & Zero Data Training</h4>
+          <p>Your inputs, embeddings, and telemetry are strictly private. Data is never utilized for secondary model training or weight adjustments.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </div>
+          <h4>Sub-15ms Latency Engine</h4>
+          <p>Global edge distribution across 38 regions ensures hyperspeed token throughput, ideal for real-time voice, video, and algorithmic workloads.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-diagram-project"></i>
+          </div>
+          <h4>Mixture of Experts (MoE)</h4>
+          <p>Sparse routing mechanism activates only relevant specialist parameters per token, slashing inference costs by 70% while improving reasoning accuracy.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+          <h4>Autonomous Self-Verification</h4>
+          <p>Models utilize step-by-step tree-of-thought verification to independently cross-examine computations before emitting final responses.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <h4>Quantum-Safe Cryptography</h4>
+          <p>Encrypted in transit and at rest with post-quantum lattice cryptography, compliant with HIPAA, GDPR, and ISO 27001 standards.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-box">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h4>Granular Usage Analytics</h4>
+          <p>Comprehensive observability dashboard monitoring token consumption, latency percentiles, error rates, and fine-tuning checkpoints.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real-World Applications Section -->
+  <section class="section applications" id="applications">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">Industry Impact</span>
+        <h2 class="section-title">Transforming Critical Sectors</h2>
+        <p class="section-subtitle">Deploying autonomous intelligence where precision, safety, and scale are paramount.</p>
+      </div>
+
+      <div class="applications-grid">
+        <!-- App 1 -->
+        <div class="app-card">
+          <div class="app-img-wrap">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80" alt="Biomedical Drug Discovery" />
+            <div class="app-category">Biomedical & Healthcare</div>
+          </div>
+          <div class="app-body">
+            <h3>Accelerated Molecular Therapeutics</h3>
+            <p>Predicting macromolecular folding and screening billions of candidate small molecules in hours rather than decades of lab iterations.</p>
+            <div class="app-stat">
+              <strong>12x</strong> Faster Pre-Clinical Lead Time
+            </div>
+          </div>
+        </div>
+
+        <!-- App 2 -->
+        <div class="app-card">
+          <div class="app-img-wrap">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=700&q=80" alt="Financial Modeling" />
+            <div class="app-category">Quantitative Finance</div>
+          </div>
+          <div class="app-body">
+            <h3>Autonomous Risk & Volatility Hedging</h3>
+            <p>Real-time cross-market correlation analysis executing algorithmic hedging strategies with sub-millisecond execution times.</p>
+            <div class="app-stat">
+              <strong>$40B+</strong> Monitored Assets Daily
+            </div>
+          </div>
+        </div>
+
+        <!-- App 3 -->
+        <div class="app-card">
+          <div class="app-img-wrap">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=700&q=80" alt="Autonomous Robotics" />
+            <div class="app-category">Autonomous Robotics</div>
+          </div>
+          <div class="app-body">
+            <h3>Embodied Spatial Perception</h3>
+            <p>Guiding industrial robotic manipulators and autonomous warehouse fleets with adaptive real-world obstacle navigation and tactile feedback.</p>
+            <div class="app-stat">
+              <strong>99.99%</strong> Safe Navigation Rate
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology & Architecture Section -->
+  <section class="section technology" id="technology">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">Behind the Neural Engine</span>
+        <h2 class="section-title">Deep Tech Architecture</h2>
+        <p class="section-subtitle">How our multi-cluster neural supercomputers power millions of concurrent inference streams.</p>
+      </div>
+
+      <div class="tech-layout">
+        <div class="tech-card">
+          <div class="tech-step">01</div>
+          <div class="tech-detail">
+            <h3>Distributed Flash-Attention & Tensor Sharding</h3>
+            <p>Our custom hardware-aware kernels distribute attention matrices across thousands of interconnected H100/B200 GPU clusters via 3.2 Tbps NVLink interconnects, preventing memory fragmentation.</p>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-step">02</div>
+          <div class="tech-detail">
+            <h3>Dynamic Sparse Mixture-of-Experts (MoE)</h3>
+            <p>A learned top-2 gating router directs incoming tokens to designated specialized sub-networks, ensuring maximum capacity utilization with minimal floating-point energy overhead.</p>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-step">03</div>
+          <div class="tech-detail">
+            <h3>Recursive Self-Supervised Alignment (RLAIF)</h3>
+            <p>Constitutional alignment training where adversarial critic agents continuously critique, score, and sanitize generation outputs for strict factuality and ethical constraints.</p>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-step">04</div>
+          <div class="tech-detail">
+            <h3>Speculative Token Streaming Pipeline</h3>
+            <p>Small lightweight draft models pre-generate prospective token sequences while the full foundation model verifies them in parallel, boosting output token rates by up to 300%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Members Section -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge">Leadership & Scientists</span>
+        <h2 class="section-title">World-Class AI Pioneers</h2>
+        <p class="section-subtitle">Led by renowned researchers from top global laboratories, universities, and tech institutions.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Member 1 -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Dr. Elena Rostova" />
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Dr. Elena Rostova</h3>
+            <span class="team-role">Chief Scientist & Co-Founder</span>
+            <p>Former Research Scientist at MIT CSAIL. Published 40+ seminal papers in generative transformers and sparse neural routing.</p>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Alexander Vance" />
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Alexander Vance</h3>
+            <span class="team-role">Chief Executive Officer</span>
+            <p>Former Principal Architect at Google DeepMind. Pioneer in distributed model training infrastructure and enterprise deployments.</p>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Sophia Lin" />
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Sophia Lin</h3>
+            <span class="team-role">Head of Multimodal Systems</span>
+            <p>Stanford PhD. Specialist in cross-modal alignment between high-dimensional spatial vision, audio representations, and natural language.</p>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="team-card">
+          <div class="team-avatar-wrap">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Marcus Thorne" />
+            <div class="team-social">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Marcus Thorne</h3>
+            <span class="team-role">VP of Autonomous Agent Systems</span>
+            <p>Pioneered recursive agent self-correction algorithms. Leads safety alignment and real-world tool execution architectures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Book Demo Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <span class="section-badge">Get in Touch</span>
+            <h2 class="contact-heading">Deploy Autonomous AI to Your Infrastructure</h2>
+            <p class="contact-desc">
+              Whether you need dedicated dedicated GPU clusters, private cloud VPC deployments, or fine-tuned domain models, our engineering team is here to assist.
+            </p>
+
+            <div class="contact-meta-list">
+              <div class="contact-meta-item">
+                <i class="fa-solid fa-building"></i>
+                <div>
+                  <strong>Headquarters</strong>
+                  <span>500 Innovation Parkway, Suite 800, Silicon Valley, CA</span>
+                </div>
+              </div>
+              <div class="contact-meta-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <strong>Enterprise Inquiries</strong>
+                  <span>enterprise@nexusai.labs</span>
+                </div>
+              </div>
+              <div class="contact-meta-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                  <strong>Security & Compliance</strong>
+                  <span>Dedicated BAA & HIPAA agreements available</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-col">
+            <form id="contactForm" class="nexus-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" id="fullName" placeholder="Sarah Connor" required />
+                </div>
+                <div class="form-group">
+                  <label for="workEmail">Work Email</label>
+                  <input type="email" id="workEmail" placeholder="s.connor@enterprise.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="companyName">Organization / Company</label>
+                  <input type="text" id="companyName" placeholder="Quantum Dynamics Inc." required />
+                </div>
+                <div class="form-group">
+                  <label for="productInterest">Product of Interest</label>
+                  <select id="productInterest">
+                    <option value="Nexus-Omni 4.5">Nexus-Omni 4.5 (Foundation LLM)</option>
+                    <option value="Nexus Swarm OS">Nexus Swarm OS (Multi-Agent)</option>
+                    <option value="Nexus-Vision 3D">Nexus-Vision 3D (Spatial AI)</option>
+                    <option value="Nexus-Code Copilot">Nexus-Code Copilot</option>
+                    <option value="Custom Enterprise Solution">Custom Enterprise Fine-Tuning</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Scope & Estimated Token Volume</label>
+                <textarea id="message" rows="3" placeholder="Tell us about your expected monthly inference requests, latency targets, and compliance needs..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-paper-plane"></i> Submit Access Request
+              </button>
+
+              <div id="formSuccess" class="form-status-alert hidden">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>Request Dispatched!</strong>
+                  <p>Our solutions architecture team will contact you within 2 business hours with API credentials.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-brain"></i></span>
+          <span class="logo-title">Nexus<span>AI</span></span>
+        </a>
+        <p class="brand-text">
+          Pioneering safe, autonomous, and scalable artificial general intelligence for the betterment of science and humanity.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Foundation Models</h4>
+        <ul>
+          <li><a href="#products">Nexus-Omni 4.5</a></li>
+          <li><a href="#products">Nexus Swarm OS</a></li>
+          <li><a href="#products">Nexus-Vision 3D</a></li>
+          <li><a href="#products">Nexus-Code Engine</a></li>
+          <li><a href="#">Model Safety Benchmarks</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Enterprise Solutions</h4>
+        <ul>
+          <li><a href="#applications">Biomedical Discovery</a></li>
+          <li><a href="#applications">Financial Risk Systems</a></li>
+          <li><a href="#applications">Autonomous Robotics</a></li>
+          <li><a href="#">Private VPC Hosting</a></li>
+          <li><a href="#">Security & Certifications</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Research & Company</h4>
+        <ul>
+          <li><a href="#technology">Technical Architecture</a></li>
+          <li><a href="#team">Research Team</a></li>
+          <li><a href="#">Academic Publications</a></li>
+          <li><a href="#">Careers (We're Hiring)</a></li>
+          <li><a href="#contact">Contact Support</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 NexusAI Technologies Corporation. Built for Creative HTML & CSS Webpage Project (Group 3 - Activity 3).</p>
+        <span class="compliance-badge"><i class="fa-solid fa-lock"></i> Zero Data Retention Guaranteed</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
